@@ -1,0 +1,330 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 37px;
+  padding: 8px 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 37px;
+  padding: 8px 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 37px;
+  padding: 8px 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* flex  */
+.flex {
+  display: flex;
+}
+
+.center-item {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.flex-grow1 {
+  flex-grow: 1;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0dddd;
+  box-sizing: border-box;
+  box-shadow: 8px 16px 16px 1px rgba(0, 0, 0, 0.64);
+  border-radius: 8px;
+}
+
+.header {
+  height: 50%;
+  border-radius: 0px 0px 32px 32px;
+}
+
+.input {
+  border: 1px solid #dddada;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 32px;
+  margin-top: 4px;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-gray {
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.caption {
+  font-size: 10px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inner-spacing1 {
+  padding: 8px;
+}
+.inner-spacing2 {
+  padding: 16px;
+}
+.inner-spacing3 {
+  padding: 24px;
+}
+.inner-spacing4 {
+  padding: 32px;
+}
+
+.inner-spacing-top-bottom1 {
+  padding: 8px 0;
+}
+
+.inner-spacing-left-right3 {
+  padding: 0 24px;
+}
+
+.spacing-top-bottom1 {
+  margin: 8px 0;
+}
+
+.spacing-top-bottom2 {
+  margin: 16px 0;
+}
+
+.btn {
+  background: #a8a8a8;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn,
+.large {
+  font-size: 24px;
+  width: 180px;
+  height: 50px;
+}
+
+.background-gray {
+  background: #a8a8a8;
+}
+
+.border-top-bottom {
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-left: none;
+  border-right: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-color: #a8a8a8;
+  width: 0px;
+  z-index: 1;
+  transition: 400ms ease-in-out 0s;
+}
+
+.menu-items {
+  display: none;
+}
+
+#toggle:checked ~ .menu {
+  background-color: a8a8a8;
+  width: 75%;
+  transition: 400ms ease-in-out 0s;
+}
+
+@media (min-width: 500px) {
+  #toggle:checked ~ .menu {
+    max-width: 350px;
+  }
+}
+
+#toggle:checked ~ .checked {
+  background-image: url("/assets/arrow.png");
+  transition: 400ms ease-in-out 0s;
+}
+
+#toggle:checked ~ .menu .menu-items {
+  display: block;
+}
+.checked {
+  position: relative;
+  background-image: url("/assets/menu_18px.png");
+  height: 54px;
+  width: 48px;
+  display: block;
+  transition: 400ms ease-in-out 0s;
+  z-index: 2;
+}
+
+.menu-items ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-items ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.spacing-card-item {
+  padding: 8px 24px;
+}
+
+.border-color-gray {
+  border-block-color: rgba(184, 182, 182, 0.62);
+}
+
+.arow-icon {
+  background-image: url("/assets/arrowiosforwardoutline_110852\ 1.png");
+  height: 19px;
+  width: 24px;
+}
+
+.card-item {
+  text-decoration: none;
+  color: black;
+}
+
+.card-item:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.card-conteiner {
+  width: 80%;
+}
+
+@media (min-width: 500px) {
+  .card-conteiner {
+    max-width: 500px;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.button-icon {
+  width: 72px;
+  background-color: #c4c4c4;
+  height: 72px;
+  border-radius: 59px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.64);
+  z-index: 1;
+}
+
+.add-icon {
+  background-image: url("/assets/add_icon-icons.com_74155\ 1.png");
+  height: 54px;
+  width: 54px;
+  display: block;
+}
+
+.dialog {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#toggle:checked ~ .dialog {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+}

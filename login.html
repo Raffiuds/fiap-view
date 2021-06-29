@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/main.css"
+    />
+    <!-- <script src='main.js'></script> -->
+  </head>
+  <body>
+    <div class="flex full-height center-item">
+      <section class="card container flex column inner-spacing4">
+        <form action="/index.html" method="GET">
+          <div class="flex column inner-spacing-top-bottom1">
+            <label for="email">Email</label>
+            <input class="input" type="email" name="email" id="email" />
+            <hr class="full-width spacing-top-bottom1" />
+          </div>
+          <div class="flex column">
+            <label for="password">Senha</label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+            />
+            <hr class="full-width spacing-top-bottom1 " />
+          </div>
+
+          <div class="flex align-items-center space-between">
+            <div>
+              <input type="checkbox" id="connected" name="connected" checked />
+              <label for="connected" class="caption">Manter conectado</label>
+            </div>
+            <a href="#" class="color-black caption">Esqueceu a senha?</a>
+          </div>
+
+          <div class="flex center-item inner-spacing3">
+            <input type="submit" value="Login" class="btn large" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
