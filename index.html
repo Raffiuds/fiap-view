@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tela inicial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/main.css"
+    />
+    <!-- <script src='main.js'></script> -->
+  </head>
+
+  <body class="flex column">
+    <header class="background-gray">
+      <div class="flex space-between align-items-center inner-spacing1">
+        <div>
+          <input type="checkbox" name="toggle" id="toggle" />
+          <label for="toggle" class="checked"></label>
+          <div class="menu">
+            <nav class="menu-items full-height">
+              <ul class="flex column justify-content full-height">
+                <li class="inner-spacing3">
+                  <a href="/setting.html"
+                    ><div class="flex align-items-center inner-spacing1">
+                      <img src="/assets/gear.png" alt="" />
+                      <span class="inner-spacing1 title">Configurações</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="inner-spacing3">
+                  <a href="/measurement.html"
+                    ><div class="flex align-items-center inner-spacing1">
+                      <img src="/assets/ruler.png" alt="" />
+                      <span class="inner-spacing1 title">Medições</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div><img src="/assets/avatar.png" alt="" /></div>
+      </div>
+    </header>
+    <main class="flex-grow1 flex center-item">
+      <section class="card container flex column inner-spacing4 center-item">
+        <img src="/assets/avatar-main.png" alt="" />
+        <h2 class="background-gray spacing-top-bottom2">Rafael Vinicius</h2>
+        <div class="flex space-between full-width">
+          <h3 class="background-gray inner-spacing1 border-top-bottom">
+            185cm
+          </h3>
+          <h3 class="background-gray inner-spacing1 border-top-bottom">
+            85,5kg
+          </h3>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Medições</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/main.css"
+    />
+    <!-- <script src='main.js'></script> -->
+  </head>
+
+  <body class="flex column">
+    <header
+      class="background-gray flex align-items-center align-items-start header"
+    >
+      <div class="flex align-items-center inner-spacing4">
+        <img src="./assets/gearWhite.png" alt="" />
+        <h2 class="inner-spacing1 color-white">Configurações</h2>
+      </div>
+    </header>
+    <main class="flex-grow1 flex center-item absolute full-width full-height">
+      <section class="card flex column card-conteiner ">
+        <h3 class="inner-spacing3">Peso</h3>
+        <hr class="full-width border-color-gray" />
+        <table class="spacing-top-bottom2">
+          <thead>
+            <tr>
+              <th class="color-gray font-weight-normal">Data</th>
+              <th class="color-gray font-weight-normal">Peso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+            <tr>
+              <td class="inner-spacing1 text-align-center">06/08/2020</td>
+              <td class="inner-spacing1 text-align-center">75,0 kg</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle" class="button-icon flex center-item"
+        ><span class="add-icon"></span
+      ></label>
+
+      <section class="dialog center-item">
+        <div class="card flex column inner-spacing4">
+          <div class="flex column inner-spacing-top-bottom1">
+            <label for="email">Data</label>
+            <input class="input" type="email" name="email" id="email" />
+            <hr class="full-width spacing-top-bottom1 border-color-gray" />
+          </div>
+          <div class="flex column inner-spacing-top-bottom1">
+            <label for="email">Peso</label>
+            <input class="input" type="email" name="email" id="email" />
+            <hr class="full-width spacing-top-bottom1 border-color-gray" />
+          </div>
+          <div class="flex center-item inner-spacing-left-right3">
+            <input type="submit" value="Enviar" class="btn large" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
